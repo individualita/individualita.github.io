@@ -1,0 +1,42 @@
+@media screen and (max-width: 1150px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--first-color);
+        z-index: 5;
+        transition: background-color .4s, box-shadow .4s;
+    }
+    .nav {
+        position: relative;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__link {
+            color: var(--title-color);
+            font-size: var(--smaller-font-size);
+            transition: color .4s;
+            font-weight: var(--font-semi-bold);
+        }
+        &__logo {
+            color: var(--white-color);
+            font-weight: var(--font-semi-bold);
+            transition: color .4s;
+        }
+        &__close,
+        &__toggle {
+            display: inline-block;
+            cursor: pointer;
+        }
+        &__toggle {
+            transition: color .4s;
+        }
+        &__actions {
+            width: 10px;
+            height: 10px;
+        }
+    
+    }
+}
