@@ -1,34 +1,70 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-bottom: 1px solid rgb(83, 108, 75);
+    &__btn {
+        display: none;
+    }
+}
 
 .nav {
-    &__menu {
-        position: fixed;
-        top: -100%;
-        left: 0;
-        background-color: var(--body-color);
-        width: 100%;
-        box-shadow: 0 12px 24px var(--shadow-color);
-        padding-block: 5rem 4rem;
-        transition: top .4s;
+    position: relative;
+    padding: 25px 10px;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+        font-size: var(--h3-font-size);
+        a {
+            color: var(--title-color);
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
     &__list {
         display: flex;
-        flex-direction: column;
-        row-gap: 1.5rem;
-        text-align: center;
+        justify-content: space-between;
+        gap: 30px;     
+    }
+    &__item {
+        position: relative;
     }
     &__link {
+        position: relative;
         color: var(--title-color);
-        font-size: var(--smaller-font-size);
-        transition: color .4s;
-        font-weight: var(--font-semi-bold);
-        &:hover {
-            color: var(--first-color);
+        transition: color .3s;
+        &.active {
+            &:after {
+                content: '';
+                position: absolute;
+                width: 25%;
+                height: 2px;
+                background-color: var(--title-color);
+                left: 0;
+                bottom: -.5rem;
+                transition: width .3s;  
+            }
         }
-    }
-    &__close {
-        position: absolute;
-        top: 1.15rem;
-        right: 1.15rem;
+        &:hover {
+            text-decoration: none;
+            color: var(--first-color-alt);
+            &::after {
+                width: 25%;
+            }
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--title-color);
+            left: 0;
+            bottom: -.5rem;
+            transition: width.3s;
+        }
     }
 }
 

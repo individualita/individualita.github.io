@@ -8,14 +8,14 @@
 </head>
 <body>
     <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__logo">Roman K.</div>
-
-            <div class="nav__menu" id="nav-menu">
-
+        <div class="container">
+            <nav class="nav">
+                <div class="nav__logo">
+                    <a href="#">Roman K.</a>
+                </div>
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">About me</a>
+                        <a href="#about" class="nav__link active">About me</a>
                     </li>
                     <li class="nav__item">
                         <a href="#resume" class="nav__link">Resume</a>
@@ -27,22 +27,23 @@
                         <a href="#projects" class="nav__link">Projects</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact me</a>
+                        <a href="#contact" class="nav__link">Contact</a>
                     </li>
                 </ul>
+            </nav> 
+        </div>
 
-                <div class="nav__close" id="nav-close">
-                    <img src="icons/close.svg" alt="close">
-                </div>
-            </div>
-            
-            <div class="nav__actions">
-                <div class="nav__toggle" id="nav-toggle">
-                    <img src="icons/apps.svg" alt="apps">
-                </div>
-            </div> 
-        </nav>      
+        <div class="theme__button" id="theme-button">
+            <i class="ri-moon-line"></i>
+        </div>
+        <div class="header__btn header__btn-active" id="header-btn">
+            <span></span>
+        </div>
+
     </header>
+
+
+
     <!--<section class="home">
         <div class="container">
             <div class="home__wrapper">
