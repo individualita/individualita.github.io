@@ -1,4 +1,5 @@
 .header {
+    background-color: red;
     position: fixed;
     width: 100%;
     top: 0;
@@ -36,6 +37,7 @@
         position: relative;
         color: var(--title-color);
         transition: color .3s;
+        font-weight: var(--font-medium);
         &.active {
             &:after {
                 content: '';
