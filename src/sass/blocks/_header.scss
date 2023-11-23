@@ -1,7 +1,6 @@
 .header {
-    background-color: red;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
     left: 0;
     z-index: 5;
@@ -13,49 +12,35 @@
 
 .nav {
     position: relative;
-    padding: 25px 10px;
+    padding: 25px 0;
     display: flex;
     justify-content: space-between;
     &__logo {
-        font-size: var(--h3-font-size);
+        font-size: var(--h2-font-size);
         a {
-            color: var(--title-color);
-            &:hover {
-                text-decoration: none;
-            }
+            color: var(--text-color);
         }
     }
     &__list {
         display: flex;
         justify-content: space-between;
-        gap: 30px;     
+        gap: 30px;
     }
     &__item {
         position: relative;
     }
     &__link {
         position: relative;
-        color: var(--title-color);
+        color: var(--text-color);
         transition: color .3s;
         font-weight: var(--font-medium);
-        &.active {
-            &:after {
-                content: '';
-                position: absolute;
-                width: 25%;
-                height: 2px;
-                background-color: var(--title-color);
-                left: 0;
-                bottom: -.5rem;
-                transition: width .3s;  
-            }
-        }
+        font-size: var(--h3-font-size);
         &:hover {
             text-decoration: none;
             color: var(--first-color-alt);
-            &::after {
-                width: 25%;
-            }
+            /*&:after {
+                width: 25%; //для анимации при наведении//
+            }*/
         }
         &:after {
             content: '';
@@ -65,8 +50,12 @@
             background-color: var(--title-color);
             left: 0;
             bottom: -.5rem;
-            transition: width.3s;
+            transition: width .3s;
+        }
+        &-active {
+            &:after {
+                width: 75%;
+            }
         }
     }
 }
-

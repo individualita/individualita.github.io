@@ -1,39 +1,41 @@
-                                             /*google fonts */
- @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap');
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap');
 /* boostrap-reboot.min*/
 @import 'libs/bootstrap-reboot.min';
 
+
 :root {
---body-font: 'Syne', sans-serif;
-/*Font weight*/
---font-regular: 400;
---font-medium: 500;
---font-bold: 600;
-
-/*font size */
-/*.5rem = 8px | 1rem = 16px ...*/
---biggest-font-size: 2rem;
---h1-font-size: 1.5rem;
---h2-font-size: 1.25rem;
---h3-font-size: 1rem;
---normal-font-size: .938rem;
---small-font-size: .813rem;
---smaller-font-size: .75rem;
-
-/*colors*/
---first-color: rgb(130, 166, 119);
---first-color-alt: rgb(83, 108, 75);
---first-color-lighter: rgb(192, 227, 181);
---title-color: rgb(24, 28, 23);
---text-color: rgb(68, 92, 61);
---text-color-light: rgb(143, 156, 139);
---input-color: rgb(206, 222, 201);
---body-color: rgb(241, 244, 240);
---container-color: #fff;
---scroll-bar-color: rgb(229, 231, 228);
---scroll-thumb-color: rgb(148, 163, 143);
-
-}
+    --body-font: 'Syne', sans-serif;
+    /*Font weight*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-bold: 600;
+    
+    /*font size */
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    
+    /*colors*/
+    --first-color: rgb(130, 166, 119);
+    --first-color-alt: rgb(83, 108, 75);
+    --first-color-lighter: rgb(192, 227, 181);
+    --title-color: #000;
+    --text-color: #000;
+    --text-color-light: rgb(143, 156, 139);
+    --input-color: rgb(206, 222, 201);
+    --body-color: rgb(241, 244, 240);
+    --container-color: #fff;
+    --scroll-bar-color: rgb(229, 231, 228);
+    --scroll-thumb-color: rgb(148, 163, 143);
+    
+    }   
+    
 
 
 html {
@@ -41,10 +43,11 @@ html {
 }
 body {
     font-family: var(--body-font);
-    background-color: var(--body-color);
     font-size: var(--normal-font-size);
     color: var(--title-color);
+    background-color: var(--body-color);
 }
+
 
 .container {
     max-width: 1100px;
@@ -76,3 +79,4 @@ h1, h2, h3, h4 {
 @import 'blocks/header';
 @import 'blocks/home';
 @import 'blocks/media';
+    

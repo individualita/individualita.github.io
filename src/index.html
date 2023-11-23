@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -15,13 +15,13 @@
                 </div>
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#about" class="nav__link active">About me</a>
+                        <a href="#about" class="nav__link nav__link-active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About me</a>
                     </li>
                     <li class="nav__item">
                         <a href="#resume" class="nav__link">Resume</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">Skills</a>
                     </li>
                     <li class="nav__item">
                         <a href="#projects" class="nav__link">Projects</a>
@@ -31,52 +31,34 @@
                     </li>
                 </ul>
             </nav> 
-        </div>
 
-        <div class="theme__button" id="theme-button">
-            <i class="ri-moon-line"></i>
-        </div>
-        <div class="header__btn header__btn-active" id="header-btn">
-            <span></span>
-        </div>
-
+            <div class="theme__button" id="theme-button">
+                <i class="ri-moon-line"></i>
+            </div>
+            <div class="header__btn header__btn-active" id="header-btn">
+                <span></span>
+            </div>
+    </div>
     </header>
-
-
-
-    <!--<section class="home">
+    <section class="home" id="home">
         <div class="container">
             <div class="home__wrapper">
-                <h1 class="home__name">Roman K.</h1>
-                <div class="home__perfil">
-                    <div class="home__image">
-                        <img src="img/perfolio.jpg" alt="perfil" class="home__img">
-                        <div class="home__shadow"></div>
-                        <div class="geometric-box"></div>
-                    </div>
-                </div>
+                <div class="home__img"></div>
                 <div class="home__info">
-                    <p class="home__descr">
-                        Recognition Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt cum rem corporis neque dolorem ipsa voluptas ad numquam, quo recusandae repellat quaerat exercitationem. Quo saepe libero molestiae aliquid porro dolorum.
-                    </p>
-                    <a href="" class="home__scroll"></a>
-                </div>
-                <div class="home__social">
-                    <a href="#" class="home__social-link">
-                        <img src="icons/instagram.svg" alt="instagram">
-                    </a>
-                    <a href="#" class="home__social-link">
-                        <img src="icons/vk.svg" alt="vk">
-                    </a>
-                    <a href="#" class="home__social-link">
-                        <img src="icons/gitHub.svg" alt="github">
-                    </a>
-                    <a href="#" class="home__social-link">
-                        <img src="icons/linkedIn.svg" alt="linkedin">
-                    </a>
+                    <h1>Roman K.</h1>
+                    <p>Hi, I'm... A passionate Front-end developer based in Warsaw, Poland.</p>
+                    <div class="home__social">
+                        <a href="#" class="home__social-link">
+                            <img src="icons/gitHub.svg" alt="github">
+                        </a>
+                        <a href="#" class="home__social-link">
+                            <img src="icons/linkedIn.svg" alt="linkedin">
+                        </a>
+
+                    </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 </body>
 </html>
