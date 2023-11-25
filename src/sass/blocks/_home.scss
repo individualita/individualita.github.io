@@ -16,6 +16,7 @@
             font-weight: var(--font-bold);
             color: var(--title-color);
             line-height: 60px;
+            text-align: center;
         }
         p {
             font-size: 18px;
@@ -33,15 +34,46 @@
         }
     }
     &__social {
+        position: relative;
         display: flex;
-        
-        /**
-        flex-direction: column;
+        justify-content: center;
         gap: 20px;
-        position: absolute;
-        right: 35%;
-        top: 50%;
-        transform: translateY(-50%); **/
+        img {
+            width: 25px;
+        }
+        &:after {
+            content: '';
+            width: 50%;
+            height: 1px;
+            background-color: grey;
+            position: absolute;
+            bottom: -30px;
+        }
+
+    }
+    &__skillset {
+        display: flex;
+        align-items: center;
+        &-icons {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 40px;
+            li {
+                display: flex;
+                height: 50px;
+                width: 80px;
+                img {
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+        span {
+            font-weight: var(--font-medium);
+            padding-right: 30px;
+            border-right: 2px solid rgba(45,46,50,.5);
+            font-size: var(--h3-font-size);
+        }
 
     }
 
