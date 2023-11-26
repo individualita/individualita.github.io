@@ -5,6 +5,7 @@
     left: 0;
     z-index: 5;
     border-bottom: 1px solid rgb(83, 108, 75);
+    background-color: var(--body-color);
     &__btn {
         display: none;
     }
