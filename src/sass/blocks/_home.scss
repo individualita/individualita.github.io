@@ -38,6 +38,12 @@
         display: flex;
         justify-content: center;
         gap: 20px;
+        &-link {
+            svg {
+                fill: red;
+                color: red;
+            }
+        }
         img {
             width: 25px;
         }
