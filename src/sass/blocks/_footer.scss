@@ -1,0 +1,13 @@
+.footer {
+    width: 100%;
+    padding: 50px 0;
+    background-color: var(--title-color);
+    &__wrapper {
+
+        h4 {
+            color: white;
+            font-size: 20px;
+            margin: 0;
+        }
+    }
+}
