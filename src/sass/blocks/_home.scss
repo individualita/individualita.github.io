@@ -40,8 +40,10 @@
         gap: 20px;
         &-link {
             svg {
-                fill: red;
-                color: red;
+                fill: var(--title-color);
+                &:hover {
+                    fill: var(--subtitle-color);
+                }
             }
         }
         img {
@@ -79,11 +81,11 @@
             }
         }
         span {
-            font-weight: var(--font-medium);
+            font-weight: var(--font-bold);
             padding-right: 30px;
             border-right: 2px solid rgba(45,46,50,.5);
             font-size: var(--h3-font-size);
-            color: var(--text-color);
+            color: var(--title-color);
         }
 
     }

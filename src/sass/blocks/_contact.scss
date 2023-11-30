@@ -1,6 +1,12 @@
 .contact {
     padding: 40px 0;
+    &__subtitle {
+        margin-top: 40px;
+        font-size: 25px;
+        color: var(--color-lighter);
+    }
     &__wrapper {
+        margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
         gap: 50px;
@@ -9,6 +15,15 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        border: 1px solid black;
+    }
+    &__icon {
+        svg {
+            fill: var(--third-color);
+        }
+    }
+    &__info {
+        &-title {
+            font-weight: var(--font-bold);
+        }
     }
 }
