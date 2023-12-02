@@ -14,5 +14,8 @@
     &__icons {
         display: flex;
         gap: 30px;
+        svg {
+            fill: #fff;
+        }
     }
 }
