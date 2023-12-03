@@ -41,6 +41,7 @@
         &-link {
             svg {
                 fill: var(--title-color);
+                transition: 0.6s ease;
                 &:hover {
                     fill: var(--third-color);
                 }
@@ -55,7 +56,7 @@
             height: 1px;
             background-color: grey;
             position: absolute;
-            bottom: -30px;
+            bottom: -10px;
         }
 
     }
