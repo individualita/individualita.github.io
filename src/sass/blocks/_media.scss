@@ -51,4 +51,50 @@
     .container {
         max-width: 540px;
     }
+
+    .nav {
+        &__list {
+            position: fixed;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            align-items: center;
+            top: -100%;
+            z-index: 10;
+            width: 100%;
+            padding-top: 20%;
+            background-color: var(--body-color);
+            transition: 1s ease;
+            &__active {
+                top: 0;
+            }
+        }
+        &__btns {
+            &-hamburger {
+                display: inline-block;
+                z-index: 10;
+                margin-left: 20px;
+                transition: 1s ease;
+                &-active {
+                    &::before {
+                        transform: translateY(10px) rotate(45deg);
+                    }
+                    &::after {
+                        transform: translateY(-9px) rotate(-45deg);
+                    }
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
 }
