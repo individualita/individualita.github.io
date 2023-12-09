@@ -74,6 +74,7 @@
                 background-color: var(--text-color);
                 width: 25px;
                 height: 2px;
+                transition: .6s ease;
             }
             &::before {
                 top: 0;
