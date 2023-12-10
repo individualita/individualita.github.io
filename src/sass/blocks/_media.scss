@@ -62,7 +62,7 @@
             align-items: center;
             z-index: 10;
             width: 100%;
-            padding-top: 20%;
+            padding: 20% 0 20%;
             background-color: var(--body-color);
             transition: 1s ease;
             &-active {
@@ -90,6 +90,19 @@
         }
     }
 
+    .home {
+        &__info {
+            h1 {
+                font-size: 36px;
+            }
+        }
+        &__skillset {
+            &-icons {
+                margin: 0;
+            }
+        }
+    }
+
 
 }
 
@@ -97,4 +110,25 @@
     .container {
         max-width: 100%;
     }
+
+    .home {
+        &__wrapper {
+            padding-top: 20%;
+        }
+        &__img {
+            width: 295px;
+            height: 310px;
+        }
+        &__info {
+            h1 {
+                font-size: 20px;
+                line-height: 45px;
+            }
+            p {
+                font-size: 16px;
+                margin: 30px 0 30px;
+            }
+        }
+    }
+
 }
