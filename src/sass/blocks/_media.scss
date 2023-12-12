@@ -56,6 +56,11 @@
             }
         }
     }
+    .resume {
+        &__wrapper {
+            grid-template-columns: 320px 320px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -121,6 +126,12 @@
         &__image {
             height: 300px;
         }
+    }
+    .resume {
+       &__wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+       } 
     }
 
 
