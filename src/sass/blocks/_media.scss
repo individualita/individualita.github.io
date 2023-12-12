@@ -45,6 +45,17 @@
             }
         }
     }
+    .about {
+        &__wrapper {
+            grid-template-columns: 1fr;
+        }
+        &__image {
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -102,6 +113,15 @@
             }
         }
     }
+    .about {
+        &__wrapper {
+            grid-template-rows: auto;
+            row-gap: 30px;
+        }
+        &__image {
+            height: 300px;
+        }
+    }
 
 
 }
@@ -128,6 +148,12 @@
                 font-size: 16px;
                 margin: 30px 0 30px;
             }
+        }
+    }
+    .about {
+        padding-top: 8rem;
+        &__image {
+            height: 180px;
         }
     }
 
