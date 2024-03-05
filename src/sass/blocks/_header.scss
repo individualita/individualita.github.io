@@ -1,4 +1,4 @@
-.header {
+/*.header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -105,5 +105,77 @@
         }
     }
 }
+*/
 
+
+//в хедере лучше задать паддинги и width 100% вместо высоты и лефт райт 
+.header {
+    position: fixed; 
+    z-index: 2;
+    top: 0px;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #fff;;
+    font-family: var(--rufina-font);
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #656464;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.logo {
+    color: var(--black-color);
+    &:hover {
+        text-decoration: none;
+        color: var(--hover-color);
+    }
+}
+
+.nav {
+    &__list {
+        display: flex;
+        gap: 30px;
+        
+    }
+    &__item {
+        
+    }
+    &__link {
+        position: relative;
+        color: var(--black-color);
+        &::before {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 2px;
+            border-radius: 4px;
+            background-color: var(--hover-color);
+            bottom: -5px;
+            left: 0;
+            transform-origin: right;
+            transform: scaleX(0);
+            transition: transform .3s ease-in-out;
+        }
+        &:hover{
+            color: var(--hover-color);
+            text-decoration: none;
+            &::before {
+                transform-origin: left;
+                transform: scaleX(1);  
+            }
+        }
+        &-active {
+            color: var(--hover-color);
+        }
+    }
+}
 

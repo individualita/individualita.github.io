@@ -1,34 +1,32 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap'); //lato
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap'); // rufina
 /* boostrap-reboot.min*/
 @import 'libs/bootstrap-reboot.min';
 
 
 :root {
-    --body-font: 'Poppins', sans-serif;
+    --body-font: 'Lato', sans-serif;
+    --rufina-font: 'Rufina', serif;
     /*Font weight*/
-    --font-regular: 400;
+    --font-regular: 400; //rufina
     --font-medium: 500;
-    --font-bold: 600;
+    --font-bold: 700;//rufina
     
     /*font size */
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --biggest-font-size: 2rem;
-    --h1-font-size: 5.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --normal-font-size:  16px;
     
     /*colors*/
-    --hover-color: #96785B    ;
-    --third-color: #022E66;
+    --body-color: #f9f9f9;
+    --black-color: #000;
+    --hover-color: #9EBBE0;
+    --grey-color: #656464;
+
+
     --subtitle-color: #6d482e;
     --color-lighter: #5f5046;
     --text-color: rgb(45, 46, 50);
     --title-color: #332a23;
-    --body-color: #f9f9f9;
     --test-color: #646464;
     
     }   
@@ -47,7 +45,7 @@ body {
 
 
 .container {
-    max-width: 1100px;
+    max-width: 1130px;
     margin: 0 auto;
     padding: 0 15px;
 }
