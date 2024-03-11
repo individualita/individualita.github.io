@@ -1,15 +1,14 @@
 .footer {
     width: 100%;
     padding: 30px 0;
-    background-color: var(--title-color);
+    background-color: var(--grey-color);
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        h4 {
-            color: #fff;
-            font-size: 20px;
-            margin: 0;
-        }
+    }
+    &__title {
+        font-size: 12px;
+        color: #fff;
     }
     &__icons {
         display: flex;
