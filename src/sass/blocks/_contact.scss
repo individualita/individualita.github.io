@@ -1,29 +1,35 @@
 .contact {
-    padding: 40px 0;
-    &__subtitle {
-        margin-top: 40px;
-        font-size: 25px;
-        color: var(--color-lighter);
+    padding-top: 90px;
+    &__title {
+        text-transform: none;
     }
     &__wrapper {
-        margin-top: 30px;
+        margin-top: 50px;
         display: flex;
-        flex-wrap: wrap;
-        gap: 50px;
-    }
-    &__item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    &__icon {
-        svg {
-            fill: var(--third-color);
-        }
+        gap: 100px;
     }
     &__info {
-        &-title {
-            font-weight: var(--font-bold);
+        position: relative;
+        display: flex;
+        gap: 10px;
+        &:first-child {
+            &::before {
+                content: '';
+                background: url('../img/contactimg.svg') no-repeat center / cover;
+                width: 217px;
+                height: 80px;
+                position: absolute;
+                top: -50%;
+                left: -30px;
+            }
+
         }
+    }
+    &__header {
+        font-size: 18px;
+    }
+    &__details {
+        font-size: 14px;
+        margin-top: 5px;
     }
 }
