@@ -1,0 +1,30 @@
+:root {
+	--container-width: 1130px;
+	--container-padding: 15px;
+
+	/*fonts*/
+	--font-main: 'Manrope', sans-serif;
+	--font-accent: 'Mfred', sans-serif;
+	--font-titles: var(--font-accent);
+
+	/*colors*/
+	--page-bg: #fefdf3;
+	--primary: #4596c1;
+	--text-color: #5D5D5D;
+	--title-color: #0970af;
+	--accent: #d07f3f;
+	--hover-color: #9EBBE0;
+
+	--link-color: #2578c8; //навсякий
+
+
+
+    --laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}
