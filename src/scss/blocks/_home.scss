@@ -1,16 +1,16 @@
 .home {
     position: relative;
     height: 100svh;
-    font-family: var(--rufina-font);
+    font-family: var(--font-accent);
     padding-top: 150px;
     &::before {
         content: "";
         position: absolute;
-        top: 81px;
-        width: 500px;
+        top: 45px;
+        width: 600px;
         height: 350px;
-        background: url('../img/star.svg') no-repeat center / cover;
-        z-index: -1;
+        background: url('./../../img//main/main_star.svg') no-repeat center / cover;
+        
     }
     &__wrapper {
         display: flex;
@@ -32,14 +32,14 @@
         position: relative;
         width: 575px;
         font-size: 140px;
-        font-family: var(--accent-font);
+        //font-family: var(--font-accent);
         color: var(--title-color);
         &-highlight {
             display: block;
             text-align:right;
             font-size: 80px;
             line-height: 1.5;
-            color: var(--primary-color);
+            color: var(--primary);
         }
         &::after {
             content: '';
@@ -48,7 +48,7 @@
             left: 0;
             width: 50%;
             height: 1px;
-            background-color: var(--second-color);
+            background-color: var(--accent);
         }
     }
     &__social {
@@ -59,10 +59,10 @@
         margin-top: 30px;
         &-link {
             svg {
-                fill: var(--second-color);
+                fill: var(--text-color);
                 transition: 0.6s ease;
                 &:hover {
-                    fill: var(--title-color);
+                    fill: var(--accent);
                 }
             }
         }
