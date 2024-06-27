@@ -10,42 +10,57 @@
         left: 0;
         width: 425px;
         height: 470px;
-
     }
     &__wrapper {
-
         position: relative;
     }
     &__content {
-        margin-left: 380px;
+        margin-left: calc((1100px - 360px) / 2);
     }
     &__subtitle {
-        font-size: 18px;
-        color: var(--black-color);
-        font-weight: var(--font-bold);
+        font-size: 24px;
+        color: var(--primary);
+        font-weight: 600;
         margin-top: 60px;
     }
     &__text {
         margin-top: 30px;
-        font-size: 20px;
-        font-weight: var(--font-regular);
-        line-height: 30px;
-    }
-    &__list {
-        margin-top: 80px;
-        display: flex;
-        gap: 10px;
+        line-height: 25px;
+        font-weight: 600;
     }
     &__languages {
         margin-top: 30px;
         &-title {
             padding-bottom: 15px;
-            color: #6199e0;
-            font-weight: var(--font-medium);
+            font-size: 20px;
+            color: var(--primary);
+            font-weight: 500;
         }
-        &-item {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
             font-size: 14px;
-            margin-bottom: 5px;
+            font-weight: 600;
         }
+    }
+    &__more {
+        margin-top: 50px;
+        text-align: right;
+        font-family: var(--font-accent);
+        color: var(--accent);
+        font-size: 60px;
+        position: relative;
+        &::before {
+            position: absolute;
+            content: '';
+            top: -34px;
+            left: 0;
+            background: url('./../../img/about/about_arrow.svg') no-repeat center / cover;
+            width: 740px;
+            height: 210px;
+            transform: translateX(55%);
+        }
+        
     }
 }
