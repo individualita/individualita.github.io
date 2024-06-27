@@ -3,7 +3,7 @@
     position: relative;
     &::before {
         content: '';
-        background: url('../img/instax.png') no-repeat center/ cover;
+        background: url('./../../img/about/about_instax.png') no-repeat center/ cover;
         position: absolute;
         display: block;
         top: 70px;
