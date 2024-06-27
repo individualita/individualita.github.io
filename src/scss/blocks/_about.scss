@@ -1,21 +1,18 @@
 .about {
     padding-top: 100px;
-    position: relative;
-    &::before {
-        content: '';
-        background: url('./../../img/about/about_instax.png') no-repeat center/ cover;
-        position: absolute;
-        display: block;
-        top: 70px;
-        left: 0;
-        width: 425px;
-        height: 470px;
-    }
-    &__wrapper {
-        position: relative;
-    }
     &__content {
+        position: relative;
         margin-left: calc((1100px - 360px) / 2);
+        &::before {
+            content: '';
+            background: url('./../../img/about/about_instax.png') no-repeat center/ cover;
+            position: absolute;
+            display: block;
+            top: 70px;
+            left: -490px;
+            width: 425px;
+            height: 470px;
+        }
     }
     &__subtitle {
         font-size: 24px;
