@@ -1,0 +1,42 @@
+.icon {
+    width: 24px;
+	height: 24px;
+	fill: var(--text-color);
+	stroke: transparent;
+    transition: 0.6s ease;
+
+}
+
+.icon--linkedin {
+    width: 26px;
+    height: 26px;
+}
+
+.icon--facebook,
+.icon--telegram {
+    height: 22px;
+    width: 22px;
+}
+
+.icon--telegram,
+.icon--facebook,
+.icon--linkedin,
+.icon--github {
+    &:hover {
+        fill: var(--accent);
+    }
+}
+
+.icon--calendar {
+    width: 12px;
+    height: 12px;
+}
+.icon--githubaccent,
+.icon--linkexternal {
+    fill: var(--accent);
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+

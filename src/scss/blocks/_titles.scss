@@ -4,3 +4,9 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.title-accent {
+    font-family: var(--font-accent);
+    color: var(--accent);
+    font-size: 60px;
+}
