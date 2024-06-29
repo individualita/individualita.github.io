@@ -29,6 +29,9 @@
         &:hover {
             text-decoration: none;
         }
+        @include mobile {
+            font-size: 25px;
+        }
     }
     &__nav {
         &-list {
@@ -63,6 +66,9 @@
                 color: var(--primary);
             }
         }
+    }
+    @include tablet {
+        padding: 25px 0;
     }
 }
 

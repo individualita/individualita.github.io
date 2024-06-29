@@ -4,18 +4,33 @@
 	fill: var(--text-color);
 	stroke: transparent;
     transition: 0.6s ease;
+    /*
+    @include mobile {
+        width: 18px;
+        height: 18px;
+    }*/
 
 }
 
 .icon--linkedin {
     width: 26px;
     height: 26px;
+    /*
+    @include mobile {
+        width: 20px;
+        height: 20px;
+    }*/
 }
 
 .icon--facebook,
 .icon--telegram {
     height: 22px;
     width: 22px;
+    /*
+    @include mobile {
+        width: 16px;
+        height: 16px;
+    }*/
 }
 
 .icon--telegram,
@@ -30,6 +45,11 @@
 .icon--calendar {
     width: 12px;
     height: 12px;
+    /*
+    @include mobile {
+        width: 10px;
+        height: 10px;
+    }*/
 }
 .icon--githubaccent,
 .icon--linkedinaccent,
@@ -39,5 +59,7 @@
         opacity: 0.7;
     }
 }
+
+
 
 

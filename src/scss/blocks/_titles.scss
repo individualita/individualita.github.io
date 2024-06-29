@@ -3,10 +3,41 @@
     font-size: 68px;
     font-weight: 700;
     text-transform: uppercase;
+    @include laptop {
+        font-size: 64px;
+    }
+    @include tablet {
+        font-size: 60px;
+    }
+    @include small-tablet {
+        font-size: 48px;
+    }
+    @include mobile {
+        font-size: 45px;
+    }
+    @include small-mobile {
+        font-size: 40px;
+    }
+
 }
 
 .title-accent {
     font-family: var(--font-accent);
     color: var(--accent);
     font-size: 60px;
+    @include laptop {
+        font-size: 55px;
+    }
+    @include tablet {
+        font-size: 48px;
+    }
+    @include small-tablet {
+        font-size: 40px;
+    }
+    @include mobile {
+        font-size: 35px;
+    }
+    @include small-mobile {
+        font-size: 27px;
+    }
 }
