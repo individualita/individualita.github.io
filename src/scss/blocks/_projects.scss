@@ -20,6 +20,7 @@
         }
     }
     &__project {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -98,6 +99,7 @@
    }
    &__definition {
         display: flex;
+        flex-direction: row-reverse;
         align-items: center;
         gap: 10px;
         position: absolute;
@@ -105,15 +107,14 @@
         left: 0;
         font-size: 12px;
         color: var(--accent);
-        @include mobile {
-          bottom: -45px;
+        &.row-reverse {
+          flex-direction: row;
+          left: auto;
+          right: 0;
         }
-    &-reverse {
-        right: 0;
-    }
-    &:nth-child(even) {
-        flex-direction: row-reverse;
 
+    @include mobile {
+      bottom: -45px;
     }
    }
    &__hyphen {

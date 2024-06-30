@@ -1,0 +1,1 @@
+!function(){"use strict";!function(e){const t=document.querySelectorAll(".projects__definition");t&&t.forEach(((e,t)=>{(t+1)%2==0&&e.classList.add("row-reverse")}))}()}();
