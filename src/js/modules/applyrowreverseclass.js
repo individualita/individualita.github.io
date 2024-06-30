@@ -1,4 +1,4 @@
-export function applyRowReverseClass (elementSelector) {
+export function applyReverseClass (elementSelector, reverseClass) {
 
     const elements = document.querySelectorAll(elementSelector);
 
@@ -8,7 +8,7 @@ export function applyRowReverseClass (elementSelector) {
 
     elements.forEach((item, index) => {
         if ((index + 1) % 2 === 0) {
-            item.classList.add('row-reverse');
+            item.classList.add(reverseClass);
         }
     });
 

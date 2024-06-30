@@ -105,7 +105,7 @@
         position: absolute;
         bottom: -80px;
         left: 0;
-        font-size: 12px;
+        font-size: 14px;
         color: var(--accent);
         &.row-reverse {
           flex-direction: row;
@@ -126,26 +126,32 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
         flex-basis: 450px;
+        &.flex-end {
+          align-items: flex-end;
+          @include mobile {
+            align-items: center;
+          }
+        }
         @include laptop {
-          align-items: center;
           flex-basis: 400px;
           text-align: center;
         }
         @include tablet {
           flex-basis: auto;
-          margin-top: 40px;
+          margin-top: 80px;
         }
         @include mobile {
           margin-top: 35px;
         }
    }
    &__name {
-        font-size: 24px;
+        font-size: 26px;
         font-weight: 600;
         color: var(--primary);
    }
-   &__description {
+   &__tools{
         margin-top: 30px;
         font-size: 16px;
         font-weight: 500;
