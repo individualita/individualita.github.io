@@ -28,6 +28,9 @@
                 opacity: 0.6;
                 
             }
+            @include small-mobile {
+                top: -70px;
+            }
         }
         @include tablet {
             margin-left: 50%;

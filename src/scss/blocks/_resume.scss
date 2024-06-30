@@ -33,6 +33,7 @@
         }
         @include mobile {
             grid-template-columns: 1fr;
+            gap: 0;
         }
     }
     &__column {

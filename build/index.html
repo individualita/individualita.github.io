@@ -11,6 +11,39 @@
 		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
 	</head>
 	<body>
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__inner">
+					<a class="header__logo" href="https://github.com/individualita" target="_blank" aria-label="Link to my github profile">Roman K.</a>
+					<nav class="header__nav">
+						<ul class="header__nav-list">
+							<li class="header__nav-item">
+								<a href="#home" class="header__nav-link header__nav-link--active" aria-label="scroll to home section">Home</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#about" class="header__nav-link" aria-label="scroll to about section">About me</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#resume" class="header__nav-link" aria-label="scroll to resume section">Resume</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#projects" class="header__nav-link" aria-label="scroll to projects section">Projects</a>
+							</li>
+							<li class="header__nav-item">
+								<a href="#contact" class="header__nav-link" aria-label="scroll to contact section">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-nav">
+			<ul class="mobile-nav__list">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="docs.html">Документация</a></li>
+			</ul>
+		</div>
+
 		<main class="main">
 			<section class="home" id="home">
 				<div class="container">
@@ -66,9 +99,15 @@
 						<h2 class="about__title title">About me</h2>
 						<div class="about__subtitle">Based in&#160;Warsaw, Poland.</div>
 						<p class="about__text">
-							I&#8217;m a&#160;dedicated programmer with a&#160;passion for problem-solving and a&#160;keen eye for detail. With a&#160;strong foundation
-							in&#160;multiple programming languages and a&#160;knack for innovation, I&#160;thrive on&#160;crafting elegant solutions to&#160;complex challenges
-							in&#160;the digital realm.
+							Hello! I&#8217;m Roman, and I&#160;turned a&#160;simple interest in&#160;programming into a&#160;passion. Now I&#160;can do&#160;it&#160;constantly,
+							finding joy in&#160;each new challenge. Every task presents an&#160;opportunity not only to&#160;apply my&#160;skills but also to&#160;learn something
+							new.
+							<br /><br />
+							However, my&#160;growth doesn&#8217;t stop at&#160;technical skills. I&#160;place great importance on&#160;effective communication, teamwork, and
+							problem-solving. I&#160;understand that success in&#160;any project relies not only on&#160;technical expertise but also on&#160;the ability
+							to&#160;collaborate and adapt.
+							<br /><br />
+							Welcome to&#160;my&#160;world, where the passion for learning and self-improvement drives me&#160;forward!
 						</p>
 						<div class="about__languages">
 							<div class="about__languages-title">Languages:</div>
@@ -165,74 +204,76 @@
 					</div>
 				</div>
 			</section>
-			<!--
-        <section class="projects" id="projects">
-    <div class="container">
-        <div class="projects__title title-accent">Applying my knowledge and skills, I created...</div>
-        <div class="projects__wrapper">
-            <div class="projects__project">
-                <div class="projects__screen">
-                    <picture>
-<source srcset="./img/projects/lastofusproject.webp 1x, ./img/projects/lastofusproject@2x.webp 2x" type="image/webp">
-<source srcset="./img/projects/lastofusproject.png 1x, ./img/projects/lastofusproject@2x.png 2x" type="image/png">
-<img src="./img/projects/lastofusproject.png" alt="Screenshot of the first page of The Last of Us Part II game website" class="projects__img">
-</picture>
-                    <div class="projects__definition">Landing website
-                        <div class="projects__hyphen"></div>
-                    </div>
-                </div>
-                <div class="projects__info">
-                    <div class="projects__name">The Last Of Us II</div>
-                    <div class="projects__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error quod magnam placeat eos commodi reiciendis natus architecto nam iusto libero, voluptatum veniam ullam saepe ipsa, aspernatur dolore! Est, aspernatur.
-                    </div>
-                    <div class="projects__links">
-
-                        <a href="#" class="projects__link" aria-label="link to watch github repository with code">
-                            <svg class="icon icon--githubaccent">
-                                <use href="./img/svgsprite/sprite.symbol.svg#githubaccent"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="projects__link" aria-label="Link to view the website on hosting">
-                            <svg class="icon icon--linkexternal">
-                                <use href="./img/svgsprite/sprite.symbol.svg#linkexternal"></use>
-                            </svg>
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-            <div class="projects__project">
-                <div class="projects__screen">
-                    <picture>
-<source srcset="./img/projects/vintageproject.webp 1x, ./img/projects/vintageproject@2x.webp 2x" type="image/webp">
-<source srcset="./img/projects/vintageproject.jpg 1x, ./img/projects/vintageproject@2x.jpg 2x" type="image/jpeg">
-<img src="./img/projects/vintageproject.jpg" alt="Screenshot of the first page of The Last of Us Part II game website" class="projects__img">
-</picture>
-                    <div class="projects__definition">Landing website
-                        <div class="projects__hyphen"></div>
-                    </div>
-                </div>
-                <div class="projects__info">
-                    <div class="projects__name">Vintage Wheels</div>
-                    <div class="projects__description">Java Script, HTML, CSS.
-                    </div>
-                    <div class="projects__links">
-                        <a href="#" class="projects__link" aria-label="link to watch github repository with code">
-                            <svg class="icon icon--githubaccent">
-                                <use href="./img/svgsprite/sprite.symbol.svg#githubaccent"></use>
-                            </svg>
-                        </a>
-                        <a href="#" class="projects__link" aria-label="Link to view the website on hosting">
-                            <svg class="icon icon--linkexternal">
-                                <use href="./img/svgsprite/sprite.symbol.svg#linkexternal"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-</section> -->
+			<section class="projects" id="projects">
+				<div class="container">
+					<div class="projects__title title-accent">Applying my&#160;knowledge and skills, I&#160;created&#8230;</div>
+					<div class="projects__wrapper">
+						<div class="projects__project">
+							<div class="projects__screen">
+								<picture>
+									<source srcset="./img/projects/lastofusproject.webp 1x, ./img/projects/lastofusproject@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/projects/lastofusproject.png 1x, ./img/projects/lastofusproject@2x.png 2x" type="image/png" />
+									<img src="./img/projects/lastofusproject.png" alt="Screenshot of the first page of The Last of Us Part II game website" class="projects__img" />
+								</picture>
+								<div class="projects__definition">
+									Landing website
+									<div class="projects__hyphen"></div>
+								</div>
+							</div>
+							<div class="projects__info">
+								<div class="projects__name">The Last Of&#160;Us&#160;II</div>
+								<div class="projects__description">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam error quod magnam placeat eos commodi reiciendis natus architecto nam iusto libero,
+									voluptatum veniam ullam saepe ipsa, aspernatur dolore! Est, aspernatur.
+								</div>
+								<div class="projects__links">
+									<a href="#" class="projects__link" aria-label="link to watch github repository with code">
+										<svg class="icon icon--githubaccent">
+											<use href="./img/svgsprite/sprite.symbol.svg#githubaccent"></use>
+										</svg>
+									</a>
+									<a href="#" class="projects__link" aria-label="Link to view the website on hosting">
+										<svg class="icon icon--linkexternal">
+											<use href="./img/svgsprite/sprite.symbol.svg#linkexternal"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="projects__project">
+							<div class="projects__screen">
+								<picture>
+									<source srcset="./img/projects/vintageproject.webp 1x, ./img/projects/vintageproject@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/projects/vintageproject.jpg 1x, ./img/projects/vintageproject@2x.jpg 2x" type="image/jpeg" />
+									<img src="./img/projects/vintageproject.jpg" alt="Screenshot of the first page of The Last of Us Part II game website" class="projects__img" />
+								</picture>
+								<div class="projects__definition">
+									Landing website
+									<div class="projects__hyphen"></div>
+								</div>
+							</div>
+							<div class="projects__info">
+								<div class="projects__name">Vintage Wheels</div>
+								<div class="projects__description">
+									Java Script, HTML, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium fugit quasi accusantium impedit deleniti eum!
+								</div>
+								<div class="projects__links">
+									<a href="#" class="projects__link" aria-label="link to watch github repository with code">
+										<svg class="icon icon--githubaccent">
+											<use href="./img/svgsprite/sprite.symbol.svg#githubaccent"></use>
+										</svg>
+									</a>
+									<a href="#" class="projects__link" aria-label="Link to view the website on hosting">
+										<svg class="icon icon--linkexternal">
+											<use href="./img/svgsprite/sprite.symbol.svg#linkexternal"></use>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer" id="contact">
 			<div class="footer__top">
