@@ -8,6 +8,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     applyRowReverseClass('.projects__definition');
     scrollToSection();
     toggleNav();
-})
+});
 
 

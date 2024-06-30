@@ -28,6 +28,7 @@ export function scrollToSection() {
             const section = document.querySelector(id).offsetTop;
             console.log(section);
             window.scrollTo({top: section, behavior: 'smooth'});
+            document.body.style.overflow = '';
         });
     });
 }
