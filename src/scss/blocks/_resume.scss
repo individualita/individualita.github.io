@@ -93,4 +93,7 @@
         gap: 10px;
         color: var(--color-lighter);
     }
+    @include mobile {
+        padding-top: 70px;
+    }
 }

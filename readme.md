@@ -14,4 +14,4 @@ ENG. Build for production:
 gulp docs
 ```
 
-[In progress...](https://user.github.io/repo/)
+[Watch demo](https://individualita.github.io/)
