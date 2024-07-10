@@ -4,6 +4,9 @@
     @include tablet {
         padding-top: 30px;
     }
+    @include mobile {
+        padding-top: 70px;
+    }
     &::before {
         content: "";
         position: absolute;
@@ -92,8 +95,5 @@
         align-items: center;
         gap: 10px;
         color: var(--color-lighter);
-    }
-    @include mobile {
-        padding-top: 70px;
     }
 }

@@ -6,6 +6,13 @@
     &__content {
         position: relative;
         margin-left: calc((1100px - 360px) / 2);
+        @include tablet {
+            margin-left: 50%;
+        }
+        @include mobile {
+            z-index: 1;
+            margin-left: auto;
+        }
         &::before {
             content: '';
             background: url('./../../img/about/about_instax.png') no-repeat center/ cover;
@@ -35,13 +42,6 @@
                 top: -70px;
             }
         }
-        @include tablet {
-            margin-left: 50%;
-        }
-        @include mobile {
-            z-index: 1;
-            margin-left: auto;
-        }
 
     }
     &__subtitle {
@@ -49,6 +49,9 @@
         color: var(--primary);
         font-weight: 600;
         margin-top: 60px;
+        @include mobile {
+            font-size: 20px;
+        }
     }
     &__text {
         margin-top: 30px;

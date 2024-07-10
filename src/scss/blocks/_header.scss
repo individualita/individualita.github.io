@@ -1,5 +1,4 @@
 
-//в хедере лучше задать паддинги и width 100% вместо высоты и лефт райт 
 .header {
     position: fixed; 
     z-index: 2;
@@ -8,6 +7,12 @@
     padding: 30px 0;
     font-family: var(--font-main);
     background-color: var(--page-bg);
+    @include tablet {
+        padding: 25px 0;
+    }
+    @include mobile {
+        padding: 15px 0;
+    }
     &:after {
         content: '';
         position: absolute;
@@ -26,12 +31,12 @@
         font-family: var(--font-accent);
         font-size: 32px;
         color: var(--accent);
-        &:hover {
-            text-decoration: none;
-        }
         @include mobile {
             font-size: 25px;
             z-index: 5;
+        }
+        &:hover {
+            text-decoration: none;
         }
     }
     &__nav {
@@ -55,10 +60,11 @@
                 opacity: 0;
                 &_mobile {
                     opacity: 1;
-                    transform: translateY(0);
-                    
+                    transform: translateY(0); 
                 }
+
             }
+
         }
         &-item {
             @include mobile {
@@ -70,6 +76,8 @@
             color: var(--text-color);
             @include mobile {
                 color: var(--title-color);
+                display: block;
+                width: 100%;
             }
             &::before {
                 content: '';
@@ -98,10 +106,6 @@
             &--active {
                 color: var(--primary);
             }
-            @include mobile {
-                display: block;
-                width: 100%;
-            }
         }
     }
     &__button {
@@ -111,6 +115,9 @@
         height: 16px;
         cursor: pointer;
         z-index: 5;
+        @include mobile {
+            display: inline-block;
+        }
         & span {
             position: absolute;
             top: 50%;
@@ -154,17 +161,8 @@
             }
 
         }
-        @include mobile {
-            display: inline-block;
-        }
     }
-    @include tablet {
-        padding: 25px 0;
-    }
-    @include mobile {
-        padding: 15px 0;
-    }
-}
+} 
 
 
 
