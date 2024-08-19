@@ -87,6 +87,9 @@
             gap: 5px;
             font-size: 14px;
             font-weight: 600;
+            @include small-mobile {
+                font-size: 12px;
+            }
         }
     }
     &__more {
