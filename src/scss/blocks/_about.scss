@@ -1,7 +1,10 @@
 .about {
-    padding-top: 40px;
+    padding: 100px 0 60px;
+    @include tablet {
+        padding: 90px 0 60px;
+    }
     @include mobile {
-        padding-top: 80px;
+        padding: 75px 0 55px;
     }
     &__content {
         position: relative;
@@ -49,15 +52,20 @@
         color: var(--primary);
         font-weight: 600;
         margin-top: 60px;
+        @include tablet {
+            font-size: 22px;
+        }
         @include mobile {
-            font-size: 20px;
+            font-size: 18px;
+        }
+        @include small-mobile {
+            font-size: 16px;
         }
     }
     &__text {
         margin-top: 30px;
         line-height: 25px;
         font-weight: 600;
-        text-indent: 25px;
     }
     &__languages {
         margin-top: 30px;
@@ -66,6 +74,12 @@
             font-size: 20px;
             color: var(--primary);
             font-weight: 500;
+            @include mobile {
+                font-size: 18px;
+            }
+            @include small-mobile {
+                font-size: 16px;
+            }
         }
         &-list {
             display: flex;
@@ -93,6 +107,7 @@
             background: url('./../../img/about/about_arrow.svg') no-repeat center / cover;
             width: 740px;
             height: 210px;
+            z-index: -1;
             @include laptop {
                 top: -30px;
                 width: 640px;
@@ -108,17 +123,18 @@
             @include small-tablet {
                 width: 520px;
                 height: 148px;
+                top: -25px;
             }
             @include mobile {
                 width: 440px;
                 height: 125px;
-                top: -19px;
+                top: -23px;
             }
             @include small-mobile {
-                right: -11px;
-                width: 302px;
+                right: -15px;
+                width: 292px;
                 height: 84px;
-                top: -12px;
+                top: -14px;
             }
         }
 

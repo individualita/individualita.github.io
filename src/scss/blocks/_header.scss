@@ -32,9 +32,15 @@
         font-family: var(--font-accent);
         font-size: 32px;
         color: var(--accent);
+        @include tablet {
+            font-size: 26px;
+        }
         @include mobile {
-            font-size: 25px;
+            font-size: 22px;
             z-index: 5;
+        }
+        @include small-mobile {
+            font-size: 18px;
         }
         &:hover {
             text-decoration: none;
@@ -42,6 +48,7 @@
     }
 
     &__nav {
+        font-size: 16px;
         &-list {
             display: flex;
             gap: 30px;

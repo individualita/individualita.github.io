@@ -8,6 +8,9 @@ body {
 	color: var(--text-color);
 	font-family: var(--font-main);
 	text-wrap: balance;
+	@include tablet {
+		font-size: 14px;
+	}
 }
 
 img {

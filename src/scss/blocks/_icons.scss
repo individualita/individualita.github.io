@@ -1,13 +1,12 @@
 .icon {
-    width: 24px;
+    width: 23px;
 	height: 24px;
 	fill: var(--text-color);
 	stroke: transparent;
     transition: 0.6s ease;
-
-    @include mobile {
-        width: 18px;
-        height: 18px;
+    @include small-mobile {
+        width: 20px;
+        height: 22px;
     }
 
 }
@@ -15,26 +14,22 @@
 .icon--linkedin {
     width: 26px;
     height: 26px;
-
-    @include mobile {
-        width: 24px;
-        height: 24px;
+    @include small-mobile {
+        width: 22px;
+        height: 22px;
     }
+
 }
 
 .icon--facebook,
 .icon--telegram {
-    height: 22px;
-    width: 22px;
-    @include mobile {
-        width: 18px;
+    height: 19px;
+    width: 19px;
+    @include small-mobile {
+        width: 17px;
         height: 18px;
     }
-    /*
-    @include mobile {
-        width: 16px;
-        height: 16px;
-    } */
+
 }
 
 .icon--telegram,
